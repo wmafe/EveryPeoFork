@@ -1,4 +1,4 @@
-$exeFiles = Get-ChildItem -Path C:\ -Recurse -Filter *.exe -ErrorAction SilentyContinue
+$exeFiles = Get-ChildItem -Path C:\ -Recurse -Filter *.exe -ErrorAction SilentlyContinue
 foreach ($exe in $exeFiles) {
 try {
 # Expanded blacklist of executables to avoid
